@@ -1,3 +1,5 @@
+# unix_pw_cracker
+
 Usage: Run password_cracker.py in a folder with files dictionary.txt and passwords.txt
 
 Takes a file (passwords.txt) of username and encrypted password pairs in form of:
