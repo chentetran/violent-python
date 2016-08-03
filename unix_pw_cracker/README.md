@@ -1,8 +1,8 @@
 Usage: Run password_cracker.py in a folder with files dictionary.txt and passwords.txt
 
-Takes a file (passwords.txt) of username and password pairs in form of:
-	<username1>:<password1>
-	<username2>:<password2>
+Takes a file (passwords.txt) of username and encrypted password pairs in form of:
+	<username1>:<encryptedpassword1>
+	<username2>:<encryptedpassword2>
 	...
 
 And takes a file of words (dictionary.txt)
