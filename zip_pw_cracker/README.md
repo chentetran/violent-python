@@ -1,3 +1,5 @@
+# zip_pw_cracker
+
 Usage: $ python zip_pw_cracker.py -f <zipfile> -d <dictionarytxtfile>
 
 This script attempts to use passwords supplied in the dictionary txt file to extract the password-protected zip file.
