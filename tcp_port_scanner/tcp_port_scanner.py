@@ -27,7 +27,7 @@ def connScan(tgtHost, tgtPort):
 		print '[+] ' + str(results)
 	except:
 		screenLock.acquire()
-		print '[-] %d/tcp closed' & tgtPort
+		print '[-] %d/tcp closed' % tgtPort
 	finally:
 		screenLock.release()
 		connSkt.close()
@@ -57,7 +57,7 @@ screenLock = Semaphore(value=1)
 # Accept hostname and list of ports to scan from user
 parser = optparse.OptionParser('usage %prog -H' + '<targethost> -p <targetport>')
 parser.add_option('-H', dest='tgtHost', type='string', help='specify target host')
-parser.add_option('-p', dest='tgtPort', type='string', help='specify target port')
+parser.add_option('-p', dest='tgtPort', type='string', help='specify target port[s] separated by comma')
 
 (options, args) = parser.parse_args()
 tgtHost = options.tgtHost
@@ -68,4 +68,3 @@ if (tgtHost == None) | (tgtPorts[0] == None):
 	exit(0)
 
 portScan(tgtHost, tgtPorts)
-
